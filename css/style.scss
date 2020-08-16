@@ -7,10 +7,20 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
-.card-img-top{
-    height: 200px;
+.total-ancho{
+    max-width: none;
 }
+.card-img-top{
+    height: 100px;
+    width: 100vw;
+}
+.wrapper-row-2-1{
+   
+}
+
+
+
 .mr-3{
-    width: 20%;
-    height: 20%;
+    width: 10%;
+    height: 10%;
 }
