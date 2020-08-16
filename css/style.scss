@@ -3,13 +3,119 @@ $darkest-grey: #292929;
 $light-grey: #757575;
 $super-light-grey:#D9D9D9;
 $medium-green:#018F69;
-$medium-dark-green:hsl(164, 100%, 15%);
+$medium-dark-green:#004d38;
 
-/*Mewdium fonts*/
+.darkest-grey-text{
+    color: $darkest-grey;
+}
+.light-grey-text{
+    color: $light-grey;
+}
+.super-light-grey-text{
+    color: $super-light-grey;
+}
+
+.medium-green-text{
+    color: $medium-green;
+}
+
+.medium-dark-green-text{
+    color: $medium-dark-green;
+}
+
+.svg-fill-light-grey {
+    fill: $light-grey;
+}
+
+/* Responsive Breakpoint  */
+$breakpoint-mobil: 768px;
+
+/*Medium fonts*/
 $medium-font: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
 
 /* General*/
 body {
-    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-family: $medium-font;
 }
 
+/*CSS de Luis*/
+
+
+/*CSS de Borja*/
+
+
+
+/*CSS de Axel*/
+
+#article-list{
+    .m-article {
+        .origin-tag {
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+        .article-title{
+            font-weight: 600;
+            font-size: 1.25em;
+            line-height: 1.5em;
+        }
+        .article-title:hover{
+            cursor: pointer;
+        }
+
+        .article-extract {
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+
+        .article-author-info:hover {
+            text-decoration: underline;
+        }
+
+        .active-state {
+            svg:hover {
+                fill: $darkest-grey;
+            }
+        }
+
+        .article-thumbnail img{
+            width: 152px;
+        }
+    }
+    aside{
+        right: 0;
+        h4{
+            font-size: 1.1em;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        h5{
+            font-size: 1.6em;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        .popularity{
+            span{
+                font-size: 2.1em;
+                line-height: .9em;
+            }
+        }
+        footer {
+            ul{
+                li:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                font-size: 1em;
+                font-weight: 400;
+                color: rgba(0,0,0,.54)
+            }
+        }
+    }
+}
+
+// @media (max-width: $breakpoint-mobil) {
+//     #article-list{
+
+// }
