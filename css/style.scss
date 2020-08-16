@@ -9,49 +9,47 @@ body {
     font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }
 
-nav{
-    div{
-        div{
-            img{
+/*CSS de Luis*/
 
-            }
+nav{
+    max-height: 1000px;
+    .nav-container1{        
+        svg{
+            margin-right: 20px;
+            fill: $light-grey;
         }
-        div{
-            img{
-                .navimg:hover{
-                    cursor: pointer;
-                }
-            }
-            button{
-                .btn:hover{
-                    background-color: white;
-                    color: #6c757d;
-                    border-color: #333333;
-                }
-            }
-            p{
-                .signup{
-                    background-color: fuchsia;
-                    color:white;
-                    border-radius: 50%;
-                    width: 40px;
-                    height: 40px;
-                    padding: 10px;
-                    margin: 20px;
-                    font-size: 1.5vw;
-                    text-align: center;
-                    font-weight: 700;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .signup:hover{
-                    cursor: pointer;
-            }
+        svg:hover{
+            cursor: pointer;
+            fill: $darkest-grey;
         }
-    div{
+    }
+    .btn:hover{
+        background-color: white;
+        color: #6c757d;
+        border-color: #333333;
+    }
+    p{
+        background-color: fuchsia;
+        color:white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin: 20px;
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup:hover{
+        cursor: pointer;
+    }
+    .nav-container2{
         .navul{
-            width: 90%;
+            width: 100%;
+            
             .navli{
                 text-transform: uppercase;
                 font-size: 16px;
@@ -62,11 +60,21 @@ nav{
                 color: #212529;
             }
         }
+        .navul::-webkit-scrollbar{
+            background-color: white;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .navul::-webkit-scrollbar-button{
+              background-color: gray;
+              height: 100px;
+              position: absolute;
+              top: 50px;
+        }
     }
 }
-
-
-
 
 
 
@@ -92,4 +100,4 @@ nav{
             }
         }
     }
-}
+    }
