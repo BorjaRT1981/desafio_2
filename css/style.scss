@@ -1,6 +1,13 @@
+/*Declaración de Variables de colores*/
+$darkest-grey: #292929;
+$light-grey: #757575;
+$super-light-grey:#D9D9D9;
+$medium-dark-green:#008864;
+$medium-green:hsl(164, 100%, 15%);
+
+
 body {
     font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    
 }
 .signup{
     background-color: fuchsia;
@@ -42,20 +49,13 @@ body {
 }
 
 
-.total-ancho{
-    max-width: none;
-}
-.card-img-top{
-    height: 100px;
-    width: 100vw;
-}
-.wrapper-row-2-1{
-   
-}
 
-
-
-.mr-3{
-    width: 10%;
-    height: 10%;
+#article-list{
+    ul{
+        li{
+            img{
+                width: 190px;
+            }
+        }
+    }
 }
