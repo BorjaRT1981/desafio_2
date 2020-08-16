@@ -5,57 +5,11 @@ $super-light-grey:#D9D9D9;
 $medium-green:#018F69;
 $medium-dark-green:hsl(164, 100%, 15%);
 
+/*Mewdium fonts*/
+$medium-font: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
 
+/* General*/
 body {
     font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }
-.signup{
-    background-color: fuchsia;
-    color:white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    margin: 20px;
-    font-size: 1.5vw;
-    text-align: center;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.signup:hover{
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: white;
-    color: #6c757d;
-    border-color: #333333;
-}
-.navimg:hover{
-    cursor: pointer;
-}
-.navul{
-    width: 90%;
-    .navli{
-        text-transform: uppercase;
-        font-size: 16px;
-        color: rgba(0,0,0,.54);
-    }
-    .navli:hover{
-        cursor: pointer;
-        color: #212529;
-    }
-}
 
-
-
-#article-list{
-    ul{
-        li{
-            img{
-                width: 190px;
-            }
-        }
-    }
-}
