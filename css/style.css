@@ -32,6 +32,85 @@ body {
 }
 
 /*CSS de Luis*/
+nav {
+  max-height: 1000px;
+}
+
+nav .nav-container1 svg {
+  margin-right: 20px;
+  fill: #757575;
+}
+
+nav .nav-container1 svg:hover {
+  cursor: pointer;
+  fill: #292929;
+}
+
+nav .btn:hover {
+  background-color: white;
+  color: #6c757d;
+  border-color: #333333;
+}
+
+nav p {
+  background-color: fuchsia;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .signup:hover {
+  cursor: pointer;
+}
+
+nav .nav-container2 .navul {
+  width: 100%;
+}
+
+nav .nav-container2 .navul .navli {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+nav .nav-container2 .navul .navli:hover {
+  cursor: pointer;
+  color: #212529;
+}
+
+nav .nav-container2 .navul::-webkit-scrollbar {
+  background-color: white;
+  height: 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  position: relative;
+}
+
+nav .nav-container2 .navul::-webkit-scrollbar-button {
+  background-color: gray;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+}
+
 /*CSS de Borja*/
 /*CSS de Axel*/
 #article-list .m-article .origin-tag {
