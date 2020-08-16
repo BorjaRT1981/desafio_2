@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Declaración de Variables de colores*/
 body {
   font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }
@@ -40,6 +42,7 @@ body {
 
 .navul {
   width: 90%;
+  /* Handle */
 }
 
 .navul .navli {
@@ -53,17 +56,12 @@ body {
   color: #212529;
 }
 
-.total-ancho {
-  max-width: none;
+.navul ::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
 }
 
-.card-img-top {
-  height: 100px;
-  width: 100vw;
-}
-
-.mr-3 {
-  width: 10%;
-  height: 10%;
+#article-list ul li img {
+  width: 190px;
 }
 /*# sourceMappingURL=style.css.map */
