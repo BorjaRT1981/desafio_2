@@ -79,6 +79,9 @@ nav{
     .nav-container2{
         .navul{
             width: 100%;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
             
             .navli{
                 text-transform: uppercase;
@@ -106,43 +109,26 @@ nav{
         }
     }
 }
-<<<<<<< HEAD
+
+
 /*CSS de Borja*/
 
 #main-articles{
     .feature-article{
         .article-title:hover{
             cursor: pointer;
-=======
-
-
-/*CSS de Borja*/
-
-#main-articles{
-    .row{
-        .feature-article{
         }
-    }
-
-    div{
-        ul{
-            li{
-                .media{
-                    
-                }
-                img{
-                    .mr-3{
-                        
-
-                    }
-                }
-                div.media-body{
-
-                }
+    }    
+    ul{
+        li{
+            .cursor-pointer:hover{
+                cursor: pointer;
             }
->>>>>>> 1ae6a5644af9c43da33c574629abb4f413cb7c15
         }
-    }
+    } 
+    .cierre{
+
+    }   
 }
 
 /*CSS de Axel*/
@@ -239,12 +225,3 @@ aside{
 }
 
 
-<<<<<<< HEAD
-// }
-@media (max-width: 768px) {
-    #main-articles .cierre{
-        .justify-content-start;
-    }
-}
-=======
->>>>>>> 1ae6a5644af9c43da33c574629abb4f413cb7c15
