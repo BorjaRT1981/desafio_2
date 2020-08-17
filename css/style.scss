@@ -82,9 +82,42 @@ nav{
 
 #main-articles{
     .row{
-        .feature-article{     
+        .feature-article{  
+            .card{
+                .card-img-top{
+                    .card-body{
+                        .card-text{
+                            color:  #757575;
+                            
+                        }
+                    }
+                }
+            }   
         }
     }
+
+    div{
+        ul{
+            li{
+                .media{
+                    
+                }
+                img{
+                    .mr-3{
+                        
+
+                    }
+                }
+                div.media-body{
+
+                }
+            }
+        }
+    }
+
+
+
+
 }
 
 /*CSS de Axel*/
