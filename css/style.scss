@@ -104,56 +104,14 @@ nav{
         }
     }
 }
-
-
-
-
-
-
 /*CSS de Borja*/
 
 #main-articles{
-    .row{
-<<<<<<< HEAD
-        .feature-article{  
-            .card{
-                .card-img-top{
-                    .card-body{
-                        .card-text{
-                            color:  #757575;
-                            
-                        }
-                    }
-                }
-            }   
-=======
-        .feature-article{
->>>>>>> 6f1bd0490089f501d4e2fff0ed6a4a285ae884fd
+    .feature-article{
+        .article-title:hover{
+            cursor: pointer;
         }
     }
-
-    div{
-        ul{
-            li{
-                .media{
-                    
-                }
-                img{
-                    .mr-3{
-                        
-
-                    }
-                }
-                div.media-body{
-
-                }
-            }
-        }
-    }
-
-
-
-
 }
 
 /*CSS de Axel*/
@@ -230,3 +188,8 @@ nav{
 //     #article-list{
 
 // }
+@media (max-width: 768px) {
+    #main-articles .cierre{
+        .justify-content-start;
+    }
+}
