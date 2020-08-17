@@ -12,6 +12,7 @@ nav {
 nav .nav-container1 svg {
   margin-right: 20px;
   fill: #757575;
+  margin-left: 20px;
 }
 
 nav .nav-container1 svg:hover {
@@ -33,7 +34,7 @@ nav p {
   height: 40px;
   padding: 10px;
   margin: 20px;
-  font-size: 1.5vw;
+  font-size: 20px;
   text-align: center;
   font-weight: 700;
   display: -webkit-box;
@@ -68,7 +69,7 @@ nav .nav-container2 .navul .navli:hover {
 
 nav .nav-container2 .navul::-webkit-scrollbar {
   background-color: white;
-  height: 50px;
+  height: 10px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -78,7 +79,8 @@ nav .nav-container2 .navul::-webkit-scrollbar {
 }
 
 nav .nav-container2 .navul::-webkit-scrollbar-button {
-  background-color: gray;
+  background-color: white;
+  border: 1px solid #757575;
   height: 100px;
   position: absolute;
   top: 50px;
@@ -88,5 +90,12 @@ nav .nav-container2 .navul::-webkit-scrollbar-button {
 /*CSS de Axel*/
 #article-list ul li img {
   width: 190px;
+}
+
+@media screen and (max-width: 480px) {
+  nav .nav-container1 svg {
+    margin-right: 0px !important;
+    margin-left: 10px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

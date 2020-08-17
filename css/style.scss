@@ -17,6 +17,7 @@ nav{
         svg{
             margin-right: 20px;
             fill: $light-grey;
+            margin-left: 20px;
         }
         svg:hover{
             cursor: pointer;
@@ -36,7 +37,7 @@ nav{
         height: 40px;
         padding: 10px;
         margin: 20px;
-        font-size: 1.5vw;
+        font-size: 20px;
         text-align: center;
         font-weight: 700;
         display: flex;
@@ -62,23 +63,20 @@ nav{
         }
         .navul::-webkit-scrollbar{
             background-color: white;
-            height: 50px;
+            height: 10px;
             display: flex;
             flex-direction: column;
             position: relative;
         }
         .navul::-webkit-scrollbar-button{
-              background-color: gray;
+              background-color: white;
+              border: 1px solid $light-grey;
               height: 100px;
               position: absolute;
               top: 50px;
         }
     }
 }
-
-
-
-
 
 
 /*CSS de Borja*/
@@ -100,4 +98,15 @@ nav{
             }
         }
     }
+}
+
+@media screen and (max-width: 480px){
+    nav{
+        .nav-container1{        
+            svg{
+                margin-right: 0px !important;
+                margin-left: 10px !important;
+            }   
+        }
     }
+}
