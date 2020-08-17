@@ -79,6 +79,9 @@ nav{
     .nav-container2{
         .navul{
             width: 100%;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
             
             .navli{
                 text-transform: uppercase;
@@ -111,33 +114,21 @@ nav{
 /*CSS de Borja*/
 
 #main-articles{
-    .row{
-        .feature-article{
+    .feature-article{
+        .article-title:hover{
+            cursor: pointer;
         }
-    }
-
-    div{
-        ul{
-            li{
-                .media{
-                    
-                }
-                img{
-                    .mr-3{
-                        
-
-                    }
-                }
-                div.media-body{
-
-                }
+    }    
+    ul{
+        li{
+            .cursor-pointer:hover{
+                cursor: pointer;
             }
         }
-    }
+    } 
+    .cierre{
 
-
-
-
+    }   
 }
 
 /*CSS de Axel*/
