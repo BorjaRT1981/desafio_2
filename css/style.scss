@@ -46,6 +46,7 @@ nav{
         svg{
             margin-right: 20px;
             fill: $light-grey;
+            margin-left: 20px;
         }
         svg:hover{
             cursor: pointer;
@@ -65,7 +66,7 @@ nav{
         height: 40px;
         padding: 10px;
         margin: 20px;
-        font-size: 1.5vw;
+        font-size: 20px;
         text-align: center;
         font-weight: 700;
         display: flex;
@@ -91,25 +92,55 @@ nav{
         }
         .navul::-webkit-scrollbar{
             background-color: white;
-            height: 50px;
+            height: 10px;
             display: flex;
             flex-direction: column;
             position: relative;
         }
         .navul::-webkit-scrollbar-button{
-              background-color: gray;
+              background-color: white;
+              border: 1px solid $light-grey;
               height: 100px;
               position: absolute;
               top: 50px;
         }
     }
 }
+<<<<<<< HEAD
 /*CSS de Borja*/
 
 #main-articles{
     .feature-article{
         .article-title:hover{
             cursor: pointer;
+=======
+
+
+/*CSS de Borja*/
+
+#main-articles{
+    .row{
+        .feature-article{
+        }
+    }
+
+    div{
+        ul{
+            li{
+                .media{
+                    
+                }
+                img{
+                    .mr-3{
+                        
+
+                    }
+                }
+                div.media-body{
+
+                }
+            }
+>>>>>>> 1ae6a5644af9c43da33c574629abb4f413cb7c15
         }
     }
 }
@@ -152,44 +183,68 @@ nav{
             width: 152px;
         }
     }
-    aside{
-        right: 0;
-        h4{
-            font-size: 1.1em;
-            line-height: 1.2;
-            font-weight: 600;
+}
+
+aside{
+    right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .make-me-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 0 15px;
+    }
+    h4{
+        font-size: 1.1em;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    h5{
+        font-size: 1.6em;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    .popularity{
+        span{
+            font-size: 2.1em;
+            line-height: .9em;
         }
-        h5{
-            font-size: 1.6em;
-            line-height: 1.2;
-            font-weight: 600;
-        }
-        .popularity{
-            span{
-                font-size: 2.1em;
-                line-height: .9em;
+    }
+    footer {
+        ul{
+            li:hover{
+                cursor: pointer;
+                text-decoration: underline;
             }
-        }
-        footer {
-            ul{
-                li:hover{
-                    cursor: pointer;
-                    text-decoration: underline;
-                }
-                font-size: 1em;
-                font-weight: 400;
-                color: rgba(0,0,0,.54)
-            }
+            font-size: 1em;
+            font-weight: 400;
+            color: rgba(0,0,0,.54)
         }
     }
 }
 
-// @media (max-width: $breakpoint-mobil) {
-//     #article-list{
+@media screen and (max-width: 480px){
+    nav{
+        .nav-container1{        
+            svg{
+                margin-right: 0px !important;
+                margin-left: 10px !important;
+            }   
+        }
+    }
+}
 
+
+<<<<<<< HEAD
 // }
 @media (max-width: 768px) {
     #main-articles .cierre{
         .justify-content-start;
     }
 }
+=======
+>>>>>>> 1ae6a5644af9c43da33c574629abb4f413cb7c15
