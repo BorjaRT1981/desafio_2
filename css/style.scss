@@ -3,85 +3,118 @@ $darkest-grey: #292929;
 $light-grey: #757575;
 $super-light-grey:#D9D9D9;
 $medium-green:#018F69;
-$medium-dark-green:hsl(164, 100%, 15%);
+$medium-dark-green:#004d38;
 
+.darkest-grey-text{
+    color: $darkest-grey;
+}
+.light-grey-text{
+    color: $light-grey;
+}
+.super-light-grey-text{
+    color: $super-light-grey;
+}
+
+.medium-green-text{
+    color: $medium-green;
+}
+
+.medium-dark-green-text{
+    color: $medium-dark-green;
+}
+
+.svg-fill-light-grey {
+    fill: $light-grey;
+}
+
+/* Responsive Breakpoint  */
+$breakpoint-mobil: 768px;
+
+/*Medium fonts*/
+$medium-font: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+
+/* General*/
 body {
-    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-family: $medium-font;
 }
 
 /*CSS de Luis*/
 
 nav{
-    div{
-        div{
-            img{
-
-            }
+    max-height: 1000px;
+    .nav-container1{        
+        svg{
+            margin-right: 20px;
+            fill: $light-grey;
         }
-        div{
-            img{
-
-            }
-            button{
-
-            }
-            p{
-
-            }
-
-        }
-    div{
-        ul{
-            li{
-
-            }
+        svg:hover{
+            cursor: pointer;
+            fill: $darkest-grey;
         }
     }
-}
-
-.signup{
-    background-color: fuchsia;
-    color:white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    margin: 20px;
-    font-size: 1.5vw;
-    text-align: center;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.signup:hover{
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: white;
-    color: #6c757d;
-    border-color: #333333;
-}
-.navimg:hover{
-    cursor: pointer;
-}
-.navul{
-    width: 90%;
-    .navli{
-        text-transform: uppercase;
-        font-size: 16px;
-        color: rgba(0,0,0,.54);
+    .btn:hover{
+        background-color: white;
+        color: #6c757d;
+        border-color: #333333;
     }
-    .navli:hover{
+    p{
+        background-color: fuchsia;
+        color:white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin: 20px;
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup:hover{
         cursor: pointer;
-        color: #212529;
+    }
+    .nav-container2{
+        .navul{
+            width: 100%;
+            
+            .navli{
+                text-transform: uppercase;
+                font-size: 16px;
+                color: rgba(0,0,0,.54);
+            }
+            .navli:hover{
+                cursor: pointer;
+                color: #212529;
+            }
+        }
+        .navul::-webkit-scrollbar{
+            background-color: white;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .navul::-webkit-scrollbar-button{
+              background-color: gray;
+              height: 100px;
+              position: absolute;
+              top: 50px;
+        }
     }
 }
+
+
+
+
+
 
 /*CSS de Borja*/
 
 #main-articles{
     .row{
+<<<<<<< HEAD
         .feature-article{  
             .card{
                 .card-img-top{
@@ -93,6 +126,9 @@ nav{
                     }
                 }
             }   
+=======
+        .feature-article{
+>>>>>>> 6f1bd0490089f501d4e2fff0ed6a4a285ae884fd
         }
     }
 
@@ -123,11 +159,74 @@ nav{
 /*CSS de Axel*/
 
 #article-list{
-    ul{
-        li{
-            img{
-                width: 190px;
+    .m-article {
+        .origin-tag {
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+        .article-title{
+            font-weight: 600;
+            font-size: 1.25em;
+            line-height: 1.5em;
+        }
+        .article-title:hover{
+            cursor: pointer;
+        }
+
+        .article-extract {
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+
+        .article-author-info:hover {
+            text-decoration: underline;
+        }
+
+        .active-state {
+            svg:hover {
+                fill: $darkest-grey;
+            }
+        }
+
+        .article-thumbnail img{
+            width: 152px;
+        }
+    }
+    aside{
+        right: 0;
+        h4{
+            font-size: 1.1em;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        h5{
+            font-size: 1.6em;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        .popularity{
+            span{
+                font-size: 2.1em;
+                line-height: .9em;
+            }
+        }
+        footer {
+            ul{
+                li:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                font-size: 1em;
+                font-weight: 400;
+                color: rgba(0,0,0,.54)
             }
         }
     }
 }
+
+// @media (max-width: $breakpoint-mobil) {
+//     #article-list{
+
+// }
