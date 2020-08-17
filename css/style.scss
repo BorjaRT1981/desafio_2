@@ -42,6 +42,11 @@ body {
 
 nav{
     max-height: 1000px;
+    .logo {
+        #logo-mobile{
+            fill: $darkest-grey;
+        }
+    }
     .nav-container1{        
         svg{
             margin-right: 20px;
@@ -101,6 +106,7 @@ nav{
             position: relative;
         }
         .navul::-webkit-scrollbar-button{
+            display: none;
               background-color: white;
               border: 1px solid $light-grey;
               height: 100px;
@@ -209,6 +215,34 @@ aside{
             font-size: 1em;
             font-weight: 400;
             color: rgba(0,0,0,.54)
+        }
+    }
+}
+
+.tooltip-group {
+    .tooltip-body {
+        background-color: #fafafa;
+        position: revert;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        top: calc(100% + 20px);
+        height: 100px;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid red;
+            position: absolute;
+            bottom: 10px;
+            left: calc(50% - 10px);
+        }
+    }
+    &:hover{
+        .tooltip-body{
+            display: flex;
         }
     }
 }
